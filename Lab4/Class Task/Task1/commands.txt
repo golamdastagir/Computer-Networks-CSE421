@@ -1,9 +1,0 @@
-R2>en
-Password: 
-R2#configure terminal 
-Enter configuration commands, one per line.  End with CNTL/Z.	
-R2(config)#int s0/0/0
-R2(config-if)#ip address 10.10.1.5 255.255.255.252
-R2(config-if)#
-%DUAL-5-NBRCHANGE: IP-EIGRP 1: Neighbor 10.10.1.6 (Serial0/0/0) is up: new adjacency
-R2(config-if)#no shutdown 
