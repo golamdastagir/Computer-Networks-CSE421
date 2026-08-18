@@ -1,77 +1,99 @@
-# Socket Programming
+# Lab 3 — Socket Programming
 
-A collection of Python-based client-server programming exercises using **TCP sockets**.
+## Overview
 
-The exercises explore basic client-server communication, message processing, multithreaded servers, and server-side computation.
+This lab demonstrates TCP client-server communication using Python sockets, including message processing, multithreading, and server-side calculations.
 
 ## Tasks
 
-### Task 1 — Client Information
+### Task 1 — Client/Server Communication
 
-Implemented a basic client-server application where the server provides the connected client's:
+* Establishes TCP connection between client and server
+* Client sends its hostname and IP address
+* Server receives and acknowledges the message
+* Uses `"End"` for disconnection
 
-* IP address
-* Device name
-
-### Task 2 — Message Processing
-
-Implemented a client-server application where the server receives a message from the client and counts the number of vowels.
-
-The server responds based on the number of vowels detected:
-
-* No vowels → `Not enough vowels`
-* At least two vowels → `Enough vowels I guess`
-* More than two vowels → `Too many vowels`
-
-### Task 3 — Multithreaded Client-Server
-
-Extended the previous client-server application by implementing a **multithreaded server** capable of handling multiple clients simultaneously.
-
-The server processes messages from multiple connected clients and returns the appropriate response based on vowel count.
-
-### Task 4 — Salary Calculation
-
-Implemented a client-server application where the client sends the number of hours worked and the server calculates the corresponding salary.
-
-The salary rules are:
-
-* Up to 40 hours → **Tk 200/hour**
-* More than 40 hours → **Tk 8,000 + Tk 300 for each additional hour**
-
-The calculated salary is returned to the client.
-
-## Networking Concepts
-
-* Client-server architecture
-* TCP sockets
-* IP addresses and ports
-* Socket connection and data exchange
-* Server-side request processing
-* Multithreaded network applications
-* Concurrent client handling
-
-## Technologies
-
-* Python
-* TCP/IP
-* Python Socket API
-
-## Files
+**Example:**
 
 ```text
-3-socket-programming/
-├── Task1/
+Client: Hostname: DESKTOP-PC, IP: 192.168.1.10
+Server: Message received successfully
+```
+
+### Task 2 — Vowel Processing
+
+* Client sends a word to the server
+* Server counts vowels and returns a response
+
+**Example:**
+
+```text
+Client: education
+Server: Too many vowels
+```
+
+### Task 3 — Multithreaded TCP
+
+* Uses `threading.Thread`
+* Creates a thread for each client
+* Allows multiple clients to connect simultaneously
+* Performs vowel processing like Task 2
+
+**Example:**
+
+```text
+Client 1: apple
+Client 2: sky
+
+Server:
+Client 1 → Too many vowels
+Client 2 → Not enough vowels
+```
+
+### Task 4 — Work Hours & Payment
+
+* Client sends hours worked
+* Server calculates the payment
+
+**Calculation:**
+
+```text
+Hours ≤ 40  →  200 × Hours
+Hours > 40  →  8000 + 300 × (Hours - 40)
+```
+
+**Example:**
+
+```text
+Hours Worked: 45
+Server: Will receive money: 9500
+```
+
+## Technical Concepts
+
+* TCP sockets using Python `socket`
+* Length-prefixed messages using a 16-byte header
+* Multithreading using `threading.Thread`
+* Graceful disconnection using `"End"`
+
+## Project Structure
+
+```text
+Lab-3/
+├── Task-1/
 │   ├── client.py
 │   └── server.py
-├── Task2/
+├── Task-2/
 │   ├── client.py
 │   └── server.py
-├── Task3/
-│   ├── client1.py
-│   ├── client2.py
-│   ├── client3.py
+├── Task-3/
+│   ├── client.py
 │   └── server.py
-└── Task4/
+└── Task-4/
     ├── client.py
     └── server.py
 ```
+
+## Tools
+
+Python • TCP/IP • Socket Programming • Multithreading • GitHub
