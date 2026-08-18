@@ -112,11 +112,4 @@ Analyzed captured network traffic using Wireshark, focusing on TCP communication
 
 ## Tools
 
-- Cisco Packet Tracer
-- NS-3
-- Python
-- Wireshark
-
-## Files
-
-Each exercise contains the relevant lab instructions, Packet Tracer activity files, source code, or analysis report where applicable.
+• Cisco Packet Tracer • NS-3 • Python • Wireshark
