@@ -16,10 +16,7 @@ Observed DNS and ARP communication in Cisco Packet Tracer by generating a web re
 5. Examined the exchanged PDUs and protocol information.
 
 **Topics:**
-- DNS
-- ARP
-- Packet Tracer Simulation Mode
-- PDU analysis
+• DNS • ARP • Packet Tracer Simulation Mode • PDU analysis
 
 ---
 
@@ -34,11 +31,7 @@ Examined application-layer protocol traffic in Cisco Packet Tracer, focusing on 
 4. Examined the corresponding PDUs and protocol information.
 
 **Topics:**
-- HTTP
-- SMTP
-- POP
-- Application-layer protocols
-- PDU analysis
+• HTTP • SMTP • POP • Application-layer protocols • PDU analysis
 
 ---
 
@@ -54,11 +47,7 @@ Captured and examined TCP traffic generated during an HTTP request.
 5. Examined the PDUs to observe TCP communication at different layers.
 
 **Topics:**
-- HTTP
-- TCP
-- Transport-layer protocols
-- TCP PDU analysis
-- Packet Tracer Simulation Mode
+• HTTP • TCP • Transport-layer protocols • TCP PDU analysis • Packet Tracer Simulation Mode
 
 ---
 
@@ -74,11 +63,7 @@ Implemented a basic network simulation using NS-3 and Python to study network co
 5. Collected and analyzed the resulting network performance data.
 
 **Topics:**
-- NS-3
-- Network simulation
-- Point-to-point networking
-- UDP
-- Network performance analysis
+• NS-3 • Network simulation • Point-to-point networking • UDP • Network performance analysis
 
 #### NS-3 Result
 
@@ -98,11 +83,7 @@ Analyzed captured network traffic using Wireshark, focusing on TCP communication
 5. Analyzed the observed TCP communication and related protocol fields.
 
 **Topics:**
-- Wireshark
-- Packet capture and analysis
-- TCP
-- HTTP
-- Network traffic inspection
+• Wireshark • Packet capture and analysis • TCP • HTTP • Network traffic inspection 
 
 #### Wireshark Analysis
 
