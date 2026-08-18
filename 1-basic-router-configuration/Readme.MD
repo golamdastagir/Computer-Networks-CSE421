@@ -1,4 +1,3 @@
-````markdown
 # Basic Router Configuration
 
 Hands-on Cisco Packet Tracer lab based on **CCNA Exploration: Routing Protocols and Concepts — Lab 1.5.2: Basic Router Configuration**.
@@ -56,8 +55,8 @@ show ip route
 
 Connectivity was tested using:
 
-```text
-ping <destination-ip>
+```
+ping 192.168.2.2
 ```
 
 ## Screenshots
@@ -84,6 +83,3 @@ ping <destination-ip>
 
 * Cisco Packet Tracer
 * Cisco IOS CLI
-
-```
-```
