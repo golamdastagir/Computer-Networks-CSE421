@@ -1,108 +1,122 @@
-# Network Protocols and Analysis
+# Network Protocols & Analysis
 
-A collection of networking exercises focused on observing and analyzing common network and transport-layer protocols using Cisco Packet Tracer, Wireshark, and NS-3.
-
-## Topics Covered
-
-* DNS
-* ARP
-* HTTP
-* SMTP
-* TCP
-* UDP
-* Ethernet
-* IP
-* Packet/PDU analysis
-* Network simulation
-* Throughput analysis
+A collection of networking analysis exercises using Cisco Packet Tracer, NS-3, and Wireshark. The labs focus on observing network communication across the application and transport layers, as well as packet-level analysis and network simulation.
 
 ## Exercises
 
-### DNS & ARP
+### 1. DNS & ARP
 
-Used Cisco Packet Tracer to observe DNS and ARP behavior and examine how network devices resolve addresses and communicate within a network.
+Observed DNS and ARP communication in Cisco Packet Tracer by generating a web request and examining the resulting PDUs in Simulation Mode.
 
-**Files:**
+**Steps performed:**
+1. Opened the network topology in Simulation Mode.
+2. Generated a web request from the client to `www.test.com`.
+3. Observed the DNS request used to resolve the web server address.
+4. Observed ARP traffic used to determine the destination MAC address.
+5. Examined the exchanged PDUs and protocol information.
 
-```text
-DNS__ARP/
-├── Task_01_-_DNS__ARP.pkt
-└── Task_01_DNS_ARP.pdf
-```
+**Topics:**
+- DNS
+- ARP
+- Packet Tracer Simulation Mode
+- PDU analysis
 
-### HTTP & SMTP
+---
 
-Examined application-layer protocols including HTTP and SMTP and observed their behavior within a simulated network environment.
+### 2. HTTP & SMTP
 
-**Files:**
+Examined application-layer protocol traffic in Cisco Packet Tracer, focusing on HTTP, SMTP, and POP communication.
 
-```text
-HTTP__SMTP/
-├── Task_02_-_HTTP__SMTP.pkt
-└── Task_02_-_HTTP__SMTP.pdf
-```
+**Steps performed:**
+1. Generated application-layer traffic using the configured network services.
+2. Captured the resulting packets in Simulation Mode.
+3. Identified HTTP, SMTP, and POP traffic.
+4. Examined the corresponding PDUs and protocol information.
 
-### HTTP & TCP
+**Topics:**
+- HTTP
+- SMTP
+- POP
+- Application-layer protocols
+- PDU analysis
 
-Examined HTTP communication and TCP behavior using Packet Tracer's simulation/PDU capabilities.
+---
 
-**Files:**
+### 3. HTTP & TCP
 
-```text
-HTTP__TCP/
-├── Task_03_-_HTTP__TCP.pkt
-└── Task_03_HTTP_TCP.pdf
-```
+Captured and examined TCP traffic generated during an HTTP request.
 
-### NS-3
+**Steps performed:**
+1. Entered Simulation Mode and filtered the traffic to HTTP and TCP.
+2. Generated an HTTP request from the client to the web server.
+3. Captured the packets exchanged between the client and server.
+4. Identified TCP segments associated with the HTTP request and response.
+5. Examined the PDUs to observe TCP communication at different layers.
 
-Implemented a point-to-point network simulation using **NS-3 and Python**.
+**Topics:**
+- HTTP
+- TCP
+- Transport-layer protocols
+- TCP PDU analysis
+- Packet Tracer Simulation Mode
 
-The simulation uses a UDP Echo client and server and examines packet transmission and network performance. The experiment also uses Flow Monitor statistics to examine transmitted/received packets, lost packets, delay, and throughput.
+---
 
-Packet size was varied from **128 to 2048 bytes** to examine its relationship with throughput.
+### 4. NS-3
 
-**Files:**
+Implemented a basic network simulation using NS-3 and Python to study network communication and performance.
 
-```text
-NS3/
-├── first.py
-└── ns3.pdf
-```
+**Steps performed:**
+1. Created network nodes and a point-to-point connection.
+2. Configured the network devices and communication parameters.
+3. Configured UDP-based client/server communication.
+4. Ran the simulation with different packet sizes.
+5. Collected and analyzed the resulting network performance data.
 
-### Wireshark
+**Topics:**
+- NS-3
+- Network simulation
+- Point-to-point networking
+- UDP
+- Network performance analysis
 
-Analyzed an HTTP request and response using Wireshark, examining protocol information across different networking layers.
+#### NS-3 Result
 
-The analysis includes:
+![NS-3 Simulation Result](./NS3/screenshot.png)
 
-* Ethernet II frames
-* Source and destination MAC addresses
-* Source and destination IP addresses
-* TCP source and destination ports
-* TCP sequence and acknowledgment numbers
-* TCP flags
-* TCP window size
-* HTTP GET request
-* HTTP response
+---
 
-**Files:**
+### 5. Wireshark
 
-```text
-Wireshark/
-└── wireshark.pdf
-```
+Analyzed captured network traffic using Wireshark, focusing on TCP communication and packet-level information.
+
+**Steps performed:**
+1. Captured network traffic for an HTTP communication.
+2. Opened the captured traffic in Wireshark.
+3. Identified TCP packets associated with the communication.
+4. Examined TCP header information and packet details.
+5. Analyzed the observed TCP communication and related protocol fields.
+
+**Topics:**
+- Wireshark
+- Packet capture and analysis
+- TCP
+- HTTP
+- Network traffic inspection
+
+#### Wireshark Analysis
+
+![Wireshark TCP Analysis](./Wireshark/screenshot.png)
+
+---
 
 ## Tools
 
-* Cisco Packet Tracer
-* Wireshark
-* NS-3
-* Python
+- Cisco Packet Tracer
+- NS-3
+- Python
+- Wireshark
 
-## Key Networking Concepts
+## Files
 
-This lab provides practical exposure to both **TCP and UDP**:
-
-* **TCP:** HTTP communication and packet analysis, including TCP ports, sequence/acknowledgment numbers, flags, and windowing.
-* **UDP:** NS-3 UDP Echo client/server simulation and throughput experimentation.
+Each exercise contains the relevant lab instructions, Packet Tracer activity files, source code, or analysis report where applicable.
