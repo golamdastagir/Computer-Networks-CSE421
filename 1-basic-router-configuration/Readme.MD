@@ -26,13 +26,13 @@ Key configurations included:
 
 Example interface configuration:
 
-```text
+```
 interface FastEthernet0/0
 ip address 192.168.1.1 255.255.255.0
 no shutdown
 ````
 
-```text
+```
 interface Serial0/0/0
 ip address 192.168.2.1 255.255.255.0
 clock rate 64000
@@ -43,13 +43,13 @@ no shutdown
 
 Interface status was verified using:
 
-```text
+```
 show ip interface brief
 ```
 
 The routing table was inspected using:
 
-```text
+```
 show ip route
 ```
 
