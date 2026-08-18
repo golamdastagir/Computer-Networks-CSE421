@@ -87,7 +87,9 @@ Lab-3/
 │   ├── client.py
 │   └── server.py
 ├── Task-3/
-│   ├── client.py
+│   ├── client1.py
+│   ├── client2.py
+│   ├── client3.py
 │   └── server.py
 └── Task-4/
     ├── client.py
@@ -96,4 +98,4 @@ Lab-3/
 
 ## Tools
 
-Python • TCP/IP • Socket Programming • Multithreading • GitHub
+• Python • TCP/IP • Socket Programming • Multithreading • GitHub
