@@ -81,4 +81,4 @@ ping 192.168.2.2
 
 ## Tools
 
-* Cisco Packet Tracer * Cisco IOS CLI
+• Cisco Packet Tracer • Cisco IOS CLI
